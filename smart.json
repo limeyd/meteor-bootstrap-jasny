@@ -1,0 +1,9 @@
+{
+  "name": "bootstrap-jasny",
+  "description": "UX/UI framework from Twitter extended by jasny.",
+  "homepage": "https://github.com/limeyd/meteor-bootstrap-jasny",
+  "author": "Darren Pearce <limeyd@gmail.com>",
+  "version": "1.0.0",
+  "git": "https://github.com/limeyd/meteor-bootstrap-jasny.git",
+  "packages": {}
+}

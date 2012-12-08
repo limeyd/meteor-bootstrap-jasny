@@ -1,0 +1,43 @@
+/* 
+ * XXX Hack to make bootstrap work when bundled. This needs to be included
+ * _after_ the standard bootstrap css files.
+ *
+ * After being bundled, all CSS is minified and served from the "/" dir.
+ * Thus, we need to provide absolute paths to the icons here.
+ */
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url("/packages/bootstrap-jasny/img/glyphicons-halflings.png");
+}
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"] {
+  background-image: url("/packages/bootstrap-jasny/img/glyphicons-halflings-white.png");
+}
+
+@font-face {
+  font-family: IconicStroke;
+  font-weight: normal;
+  src: url('/packages/bootstrap-jasny/fonts/iconic_stroke.eot');
+  src: local('IconicStroke'), url('iconic_stroke.eot?#iefix') format('/packages/bootstrap-jasny/fonts/embedded-opentype'), url('/packages/bootstrap-jasny/fonts/iconic_stroke.woff') format('woff'), url('/packages/bootstrap-jasny/fonts/iconic_stroke.ttf') format('truetype'), url('iconic_stroke.svg#iconic') format('svg'), url('../fonts/iconic_stroke.otf') format('opentype');
+}
+
+@font-face {
+  font-family: IconicFill;
+    font-weight: normal;
+  src: url('/packages/bootstrap-jasny/fonts/iconic_fill.eot');
+    src: local('IconicFill'), url('/packages/bootstrap-jasny/fonts/iconic_fill.eot?#iefix') format('embedded-opentype'), url('/packages/bootstrap-jasny/fonts/iconic_fill.woff') format('woff'), url('/packages/bootstrap-jasny/fonts/iconic_fill.ttf') format('truetype'), url('iconic_fill.svg#iconic') format('svg'), url('/packages/bootstrap-jasny/fonts/iconic_fill.otf') format('opentype');
+}
+
