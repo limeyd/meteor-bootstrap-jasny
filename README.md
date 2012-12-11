@@ -6,9 +6,7 @@ Includes all the awsome by jasny http://jasny.github.com/bootstrap/
 
 ## Usage Example
 
-Have some files like these:
-
-    meteor remove bootstrap
+    mrt remove bootstrap
     mrt add bootstrap-jasny
 
 ## Install
