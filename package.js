@@ -3,25 +3,28 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.add_files('css/bootstrap.css', 'client');
-  api.add_files('css/bootstrap-responsive.css', 'client');
-  api.add_files('js/bootstrap.js', 'client');
-  api.add_files('img/glyphicons-halflings.png', 'client');
-  api.add_files('img/glyphicons-halflings-white.png', 'client');
+  api.use('jquery');
 
-  api.add_files('fonts/iconic_fill.eot', 'client');
-  api.add_files('fonts/iconic_fill.otf', 'client');
-  api.add_files('fonts/iconic_fill.svg', 'client');
-  api.add_files('fonts/iconic_fill.ttf', 'client');
-  api.add_files('fonts/iconic_fill.woff', 'client');
-  api.add_files('fonts/iconic_stroke.eot', 'client');
-  api.add_files('fonts/iconic_stroke.otf', 'client');
-  api.add_files('fonts/iconic_stroke.svg', 'client');
-  api.add_files('fonts/iconic_stroke.ttf', 'client');
-  api.add_files('fonts/iconic_stroke.woff', 'client');
+  var path = Npm.require('path');
+  api.add_files(path.join('css', 'bootstrap.css'), 'client');
+  api.add_files(path.join('css', 'bootstrap-responsive.css'), 'client');
+  api.add_files(path.join('js',  'bootstrap.js'), 'client');
+  api.add_files(path.join('img', 'glyphicons-halflings.png'), 'client');
+  api.add_files(path.join('img', 'glyphicons-halflings-white.png'), 'client');
+
+  api.add_files(path.join('font', 'iconic_fill.eot'), 'client');
+  api.add_files(path.join('font', 'iconic_fill.otf'), 'client');
+  api.add_files(path.join('font', 'iconic_fill.svg'), 'client');
+  api.add_files(path.join('font', 'iconic_fill.ttf'), 'client');
+  api.add_files(path.join('font', 'iconic_fill.woff'), 'client');
+  api.add_files(path.join('font', 'iconic_stroke.eot'), 'client');
+  api.add_files(path.join('font', 'iconic_stroke.otf'), 'client');
+  api.add_files(path.join('font', 'iconic_stroke.svg'), 'client');
+  api.add_files(path.join('font', 'iconic_stroke.ttf'), 'client');
+  api.add_files(path.join('font', 'iconic_stroke.woff'), 'client');
 
   // XXX this makes the paths to the icon sets absolute. it needs
   // to be included _after_ the standard bootstrap css so
   // that its styles take precedence.
-  api.add_files('css/bootstrap-override.css', 'client');
+  api.add_files(path.join('css', 'bootstrap-override.css'), 'client');
 });
